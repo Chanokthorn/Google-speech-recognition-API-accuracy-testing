@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test Speech Recognition</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="calculation.js"></script>
+    <script src="commonUI.js"></script>
+    <script src="utility.js"></script>
+    <script src="http://cdn.jsdelivr.net/g/filesaver.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <input type="text" id="file-name">Enter file name</input>
+    <button type="text" id="read-file" onclick = "readTextFile();">Read file</button>
+    <button type="text" id="calculate-button" onclick="calculate();">Start</button>
+    <h1>Accuracy</h1>
+    <table class="table table-bordered">
+        <tr>
+            <th></th>
+            <th>male</th>
+            <th>female</th>
+        </tr>
+        <tr>
+            <th>utterance</th>
+            <td id='utterance-male-accuracy'>-</td>
+            <td id='utterance-female-accuracy'>-</td>
+        </tr>
+        <tr>
+            <th>words</th>
+            <td id='word-male-accuracy'>-</td>
+            <td id='word-female-accuracy'>-</td>
+        </tr>
+
+    </table>
+</body>

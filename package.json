@@ -1,0 +1,19 @@
+{
+  "name": "asr-hw1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "commonUI.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "file-saver": "^1.3.3",
+    "longest-common-subsequence": "^1.0.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

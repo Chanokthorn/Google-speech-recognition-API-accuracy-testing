@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test Speech Recognition</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="commonUI.js"></script>
+    <script src="http://cdn.jsdelivr.net/g/filesaver.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>References</h1>
+        <table class="table table-bordered">
+            <tr>
+                <th>utterance</th>
+                <th>speech</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>One thing Mark Zuckerberg has consistently excelled at is destroying his enemies.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Google Plus is no longer viewed as a threat to Facebook.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Now, Zuckerberg is turning his focus to a new enemy.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>On Thursday, Facebook announced a major change to News Feed to prioritize posts
+                        from friends over posts from publishers.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Even if it ends up helping Facebook's public image, there are other risks.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Artificial intelligence programs built by Alibaba and Microsoft have beaten humans on
+                        a reading comprehension test.</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>The technology can be gradually applied to numerous applications.</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>The Stanford test generates questions about a set of Wikipedia articles.</td>
+            </tr> 
+            <tr>
+                <td>9</td>
+                <td>Beijing said it wants the country to be a leader in artificial intelligence.</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>North and South Korea are discussing fielding a joint ice hockey team.</td>
+            </tr>
+        </table>
+        <input type='text' name='utter' id='utter'>utter</input>
+        <input type='text' name='gender' id='gender'>gender</input>
+        <h1>Simple Speech Recognizing App</h1>
+        <button id="start-button" onclick="startRecognition();">Start Listening</button>
+        <div id="result-panel">
+        </div>
+        <button id="accept-button" onclick="addRecognition();">Accept</button>
+        <input type='text' name='file-name' id='file-name'>File name</input>
+        <button id="save-button" onclick="saveRecognition();">Save</button>
+        <a href="calculate.html">Start calculating</a>
+    </div>
+</body>
+<script src="recScript.js"></script>
+</html>
